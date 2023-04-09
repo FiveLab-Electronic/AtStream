@@ -4,9 +4,10 @@
     "name": "fivelab/at-stream",
     "description": "A simple library for easy work with AT commands.",
     "keywords": ["at command", "at stream"],
+    "homepage": "https://github.com/FiveLab-Electronic/AtStream",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/FiveLab-Electronic/AtStream.git"
     },
     "authors": [
         {

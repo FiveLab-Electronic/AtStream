@@ -88,7 +88,7 @@ char *AtStream::makeArgumentsStr(const AtStreamArgument *args, uint8_t count) {
 
             atCommandSize += intInStrSize;
         } else if (argument.type == AtStreamArgumentType_String) {
-            size_t strSize = strlen(argument.strPtr);
+            auto strSize = strlen(argument.strPtr);
 
             atCommand = (char *) realloc(atCommand, atCommandSize + strSize + 2); // Use double quotes on start and end.
 
