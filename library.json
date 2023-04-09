@@ -1,0 +1,25 @@
+{
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+    "license": "MIT",
+    "name": "fivelab/at-stream",
+    "description": "A simple library for easy work with AT commands.",
+    "keywords": ["at command", "at stream"],
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "authors": [
+        {
+            "name": "Vitalii Zhuk",
+            "email": "zhuk2205@gmail.com",
+            "maintainer": true
+        }
+    ],
+    "frameworks": [
+        "arduino"
+    ],
+    "platforms": "*",
+    "headers": [
+        "AtStream.h"
+    ]
+}
