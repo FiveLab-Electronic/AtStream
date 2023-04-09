@@ -153,8 +153,16 @@ protected:
     AtStreamResult _lastResult = AtStreamResult_Unknown;
     char *_lastCommand = nullptr;
 
+    virtual void receiveNotRelatedLine();
+
+    /**
+     * Receive data from stream
+     */
     void receive();
 
+    /**
+     * Send command with arguments
+     */
     AtStreamResult sendCommand(const char *command, const char *argumentsLine);
 
     void write(const char *str);

@@ -278,11 +278,23 @@ void AtStream::receive() {
                 return;
             }
 
+            if (!(_flags & AtStreamFlags_WaitResponse)) {
+                // We don't wait response but receive data from stream.
+                // Clear response data, and call to method for process line not related to command.
+                _responseData.size = 0;
+
+                receiveNotRelatedLine();
+            }
+
             continue;
         }
 
         AT_STREAM_ADD_BYTE_TO_RESPONSE_DATA(_responseLine, byte);
     }
+}
+
+void AtStream::receiveNotRelatedLine() {
+    // Nothing to do.
 }
 
 void AtStream::write(const char *str) {

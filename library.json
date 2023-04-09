@@ -1,7 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
     "license": "MIT",
-    "name": "fivelab/at-stream",
+    "version": "1.0.0",
+    "name": "at-stream",
     "description": "A simple library for easy work with AT commands.",
     "keywords": ["at command", "at stream"],
     "homepage": "https://github.com/FiveLab-Electronic/AtStream",
